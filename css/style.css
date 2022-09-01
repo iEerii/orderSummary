@@ -1,0 +1,100 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+:root{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --verypaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-color: var(--paleBlue);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    height: 85%;
+    width: 400px;
+}
+
+.img-container img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.letter-container {
+    align-items: center;
+    background-color: var(--verypaleBlue);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    padding: 15px;
+}
+
+h1{
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    color: var(--desaturatedBlue);
+    font-size: 16px;
+    margin: 20px;
+}
+
+span {
+    color: var(--desaturatedBlue);
+    font-size: 16px;
+}
+
+ .button {
+    
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    text-align: center;
+    width: 80%;
+ }
+
+ .payment {
+    background-color: var(--brightBlue);
+    border-radius: 10px;
+    border: 1px solid var(--brightBlue);
+    color: var(--paleBlue);
+    font-weight: 700;
+    padding: 15px;
+ }
+
+ .cancel {
+    background-color: white;
+    border: 1px solid white;
+    color: var(--desaturatedBlue);
+    font-weight: 700;
+    margin-top: 33px;
+ }
+
+ .shadow {
+    -webkit-box-shadow: 3px 3px 38px -6px rgba(108,116,140,1);
+    -moz-box-shadow: 3px 3px 38px -6px rgba(108,116,140,1);
+    box-shadow: 3px 3px 38px -6px rgba(108,116,140,1);
+ }
