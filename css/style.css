@@ -17,6 +17,8 @@ body {
     text-align: center;
 }
 
+
+
 .wrapper {
     align-items: center;
     display: flex;
@@ -37,14 +39,25 @@ body {
     width: 100%;
 }
 
-.letter-container {
+.plan-box {
     align-items: center;
     background-color: var(--verypaleBlue);
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 25px;
-    padding: 15px;
+    padding: 20px; 
+}
+
+.plan-box-left {
+    display: flex;
+    align-items: center; 
+    text-align: left;
+}
+
+.plan-box-left div {
+    margin-left: 10px;
+    line-height: 10px;
 }
 
 h1{
@@ -54,6 +67,7 @@ h1{
 
 h2 {
     font-size: 16px;
+    margin-top: 0;
 }
 
 p {
@@ -65,6 +79,17 @@ p {
 span {
     color: var(--desaturatedBlue);
     font-size: 16px;
+}
+
+a {
+    color: var(--brightBlue);
+    cursor: pointer;
+    font-weight: 700;
+    transition: color .3s ease;
+}
+
+a:hover{
+    color: var(--desaturatedBlue);
 }
 
  .button {
@@ -81,16 +106,29 @@ span {
     border-radius: 10px;
     border: 1px solid var(--brightBlue);
     color: var(--paleBlue);
+    cursor: pointer;
     font-weight: 700;
     padding: 15px;
+    transition: background-color .3s ease;
+ }
+
+ .payment:hover{
+    background-color: var(--desaturatedBlue);
+    border: 1px solid var(--desaturatedBlue)
  }
 
  .cancel {
     background-color: white;
     border: 1px solid white;
     color: var(--desaturatedBlue);
+    cursor: pointer;
     font-weight: 700;
     margin-top: 33px;
+    transition: color .3s ease;
+ }
+
+ .cancel:hover{
+    color: var(--darkBlue);
  }
 
  .shadow {
