@@ -34,6 +34,12 @@ html{
     padding: 0 5.4rem;
 }
 
+.title {
+    font-size: 2.5rem;
+    color: var(--darkBlue);
+    margin-bottom: 0;
+}
+
 .bold-letter {
     font-weight: 900;
 }
@@ -43,4 +49,40 @@ html{
     font-size: 1.3rem;
     line-height: 2.2rem;
     letter-spacing: .03rem;
+}
+
+.offer-container {
+    align-items: center;
+    background-color: var(--verypaleBlue);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 4rem;
+    position: relative;
+}
+
+.offer-container img {
+    left: 2rem;
+    position: absolute;
+    width: 4rem;
+}
+
+.letter-offer-contanier{
+    margin-left: 1rem;
+    padding: 1.5rem;
+}
+
+.plan-letter {
+    color: var(--darkBlue);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.price-letter {
+    margin: 0;
+}
+
+.offer-container a {
+    /* position: absolute; */
+    right: 2rem;
 }
