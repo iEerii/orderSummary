@@ -56,20 +56,28 @@ html{
     background-color: var(--verypaleBlue);
     border-radius: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 4rem;
-    position: relative;
+    padding: 0 2rem;
 }
 
 .offer-container img {
     left: 2rem;
-    position: absolute;
     width: 4rem;
 }
 
+.offer-container a {
+    color: var(--brightBlue);
+    display: inline-block;
+}
+
+.offer-description{
+    align-items: center;
+    display: flex;
+}
+
 .letter-offer-contanier{
-    margin-left: 1rem;
-    padding: 1.5rem;
+    padding: 1.4rem;
 }
 
 .plan-letter {
@@ -83,6 +91,53 @@ html{
 }
 
 .offer-container a {
-    /* position: absolute; */
     right: 2rem;
+    transition: all .5s ease-in;
+}
+
+.offer-container a:hover {
+    color: var(--desaturatedBlue);
+}
+
+.button-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.payment-button {
+    background: var(--brightBlue);
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    color: white;
+    padding: 1.5em;
+    transition: all .5s ease-in;
+    width: 29em;
+}
+
+.payment-button:hover {
+    background-color: var(--desaturatedBlue);
+}
+
+.shadow {
+    box-shadow: -1px 16px 20px -5px rgba(190,168,240,0.75);
+    -webkit-box-shadow: -1px 16px 20px -5px rgba(190,168,240,0.75);
+    -moz-box-shadow: -1px 16px 20px -5px rgba(190,168,240,0.75);
+}
+
+.cancel-button {
+    background-color: white;
+    border: none;
+    color: var(--desaturatedBlue);
+    cursor: pointer;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    transition: all .5 ease-in;
+}
+
+.cancel-button:hover {
+    color: var(--darkBlue);
 }
